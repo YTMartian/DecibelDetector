@@ -1,6 +1,6 @@
 /*
   ESP32-C3 SuperMini + INMP441 + five-pin 74HC595 four-digit LED
-  v2.1 / illustrative DIY sound level monitor (not calibrated / not IEC 61672).
+  v2.2 / illustrative DIY sound level monitor (not calibrated / not IEC 61672).
   Arduino IDE: esp32 by Espressif Systems 3.x, board ESP32C3 Dev Module
   Library: ESP_I2S.h bundled with Arduino-ESP32 3.x. No TM1637 library.
 
@@ -8,8 +8,9 @@
   DISPLAY: VCC 3V3, GND GND, SCLK GPIO7, RCLK GPIO10, DIO GPIO3
 
   IMPORTANT: This display driver assumes TWO chained 74HC595s, one byte
-  for segments and one for digit selection. Run Display_595_Probe (v2)
-  first: it prints the four profile lines below plus a raw segment walk.
+  for segments and one for digit selection. Run Display_595_Probe (v3)
+  first: it shows "1234" then the four profile bits, and can also print
+  the profile lines plus a raw segment walk over serial.
   Change the profile and SEGMENT_MAP based on what the probe shows.
 */
 #include <Arduino.h>
