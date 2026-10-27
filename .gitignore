@@ -1,0 +1,13 @@
+# Build / temporary files
+.syntaxcheck/
+build/
+*.bin
+*.elf
+*.map
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

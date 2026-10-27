@@ -1,0 +1,5 @@
+Designator,Description,Quantity,Mount/Notes
+U1L U1R,1x8 2.54mm female headers,2,ESP32-C3 SuperMini socket 15.24mm row pitch
+J1,1x5 2.54mm pin header,1,Remote display via labeled cable
+J2,1x6 2.54mm pin header,1,Remote INMP441 via labeled cable
+H1 H2 H3 H4,M3 insulated mounting screw set,4,Optional M3 screws and plastic standoffs
